@@ -1,0 +1,130 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [],
+  "ignorePatterns": [
+    "package-lock.json",
+    "target",
+    "node_modules",
+    "testreports",
+    "out",
+    "deprecated",
+    "karate-config.js"
+  ],
+  "overrides": [
+    {
+      "files": ["*.feature"],
+      "plugins": ["cucumber"],
+      "rules": {
+        "cucumber/async-then": 2,
+        "cucumber/expression-type": 2,
+        "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"],
+        "cucumber/no-arrow-functions": 2
+      }
+    },
+    {
+      "files": ["*.json", "*.json5", "*.jsonc"],
+      "extends": [
+        "eslint:recommended",
+        "airbnb/base",
+        "plugin:prettier/recommended",
+        "prettier",
+        "plugin:jsonc/prettier"
+      ],
+      "parser": "jsonc-eslint-parser",
+      "parserOptions": {
+        "jsonSyntax": "JSON5"
+      },
+      "rules": {
+        "jsonc/sort-keys": [
+          "error",
+          {
+            "order": [
+              "author",
+              "license",
+              "name",
+              "displayName",
+              "private",
+              "version",
+              "description",
+              "main",
+              "scripts",
+              "workspaces",
+              "keywords",
+              "dependencies",
+              "devDependencies",
+              "headers",
+              "pathParameters",
+              "queryStringParameters",
+              "body",
+              "dev",
+              "uat",
+              "prod"
+            ],
+            "pathPattern": "^(?:hosts)?$"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.js"],
+      "extends": [
+        "eslint:recommended",
+        "airbnb/base",
+        "plugin:prettier/recommended",
+        "prettier"
+      ],
+      "parser": "@babel/eslint-parser",
+      "parserOptions": {
+        "babelOptions": {
+          "plugins": ["@babel/plugin-syntax-import-assertions"]
+        },
+        "requireConfigFile": false
+      },
+      "plugins": ["prettier"],
+      "rules": {
+        "default-param-last": "off",
+        "max-classes-per-file": [
+          "error",
+          { "ignoreExpressions": true, "max": 20 }
+        ],
+        "no-await-in-loop": "off",
+        "no-console": "off",
+        "no-param-reassign": [
+          "error",
+          {
+            "props": false
+          }
+        ],
+        "no-shadow": [
+          "error",
+          {
+            "allow": ["theme", "item"],
+            "builtinGlobals": false,
+            "hoist": "never"
+          }
+        ],
+        "spaced-comment": ["error", "always", { "markers": ["#"] }],
+        "import/extensions": ["error", "always", { "ignorePackages": true }],
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true,
+            "optionalDependencies": false,
+            "peerDependencies": false
+          }
+        ]
+      },
+      "settings": {
+        "import/resolver": {
+          "node": {
+            "moduleDirectory": ["node_modules"]
+          }
+        }
+      }
+    }
+  ]
+}

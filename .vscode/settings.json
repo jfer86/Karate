@@ -1,0 +1,5 @@
+{
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "karateRunner.karateRunner.default": "users.feature",
+  "java.compile.nullAnalysis.mode": "automatic"
+}

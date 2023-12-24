@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "jose",
+      "author": "karate"
+    },
+    {
+      "id": 7777,
+      "title": "jose",
+      "author": "karate"
+    },
+    {
+      "id": 4029,
+      "title": "jose",
+      "author": "karate"
+    },
+    {
+      "id": 870,
+      "title": "jose",
+      "author": "karate"
+    },
+    {
+      "id": 7009,
+      "title": "jose",
+      "author": "karate"
+    },
+    {
+      "id": 9984,
+      "title": "jose",
+      "author": "karate"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

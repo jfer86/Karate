@@ -1,0 +1,27 @@
+{
+  "pluginSearchDirs": ["./node_modules"],
+  "plugins": ["./node_modules/prettier-plugin-jsdoc"],
+  "semi": true,
+  "bracketSpacing": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "endOfLine": "lf",
+  "jsdocDescriptionTag": true,
+  "jsdocCapitalizeDescription": false,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "plugins": []
+      }
+    },
+    {
+      "files": "*.feature",
+      "options": {
+        "plugins": ["prettier-plugin-gherkin"]
+      }
+    }
+  ]
+}

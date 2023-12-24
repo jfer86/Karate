@@ -1,0 +1,32 @@
+{
+  "author": "Juan Munoz",
+  "license": "ISC",
+  "name": "karate",
+  "version": "1.0.0",
+  "description": "Karate API Testing",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier:tests": "prettier \"./src/test/java/**/*.feature\" -w --log-level error",
+    "lint:fix": "npm run prettier:tests && eslint . --fix",
+    "test": "mvn clean test -Dtest=TestRunner",
+    "start:json-server": "npx json-server db.json --port 8081"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/plugin-syntax-import-assertions": "^7.23.3",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cucumber": "^2.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsonc": "^2.11.2",
+    "eslint-plugin-prettier": "^5.1.1",
+    "jsonc-eslint-parser": "^2.4.0",
+    "prettier": "3.1.1",
+    "prettier-plugin-gherkin": "^2.1.1",
+    "prettier-plugin-jsdoc": "^1.3.0"
+  }
+}
