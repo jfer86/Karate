@@ -1,0 +1,62 @@
+{
+    "1036604143": {
+      "Decision": "Pass",
+      "DSUbicaCOLData": {
+        "IDVReasonsCode": {
+          "Reason": {
+            "Applicant": "MUÑOZ",
+            "Code": "100",
+            "Type": "Coincidencia",
+            "Description": "Documento validado exitosamente. - Pass"
+          }
+        }
+      },
+      "ApplicationData": {
+        "IDMReasonCodes": {
+          "Reason": {
+            "Applicant": "MUÑOZ",
+            "Code": "702",
+            "Type": "IDM",
+            "Description": "ID validado satisfactoriamente - Pass"
+          }
+        }
+      },
+      "VelocityCheckData": {
+        "VelocityCheckReasons": {
+          "Reason": {
+            "Applicant": "MUÑOZ",
+            "Code": "101",
+            "Type": "Sin Solicitud",
+            "Description": "El Solicitante no tiene una solicitud en curso para el producto solicitado. - Pass"
+          }
+        }
+      },
+      "FechaExpedicion": "18/11/2004",
+      "LugarExpedicion": "ITAGUI",
+      "Apellido1": "MUÑOZ",
+      "Apellido2": "URREGO",
+      "Nombre1": "JUAN",
+      "Nombre2": "FERNANDO"
+    },
+    "103660414": {
+      "Decision": "Fail",
+      "DSUbicaCOLData": null,
+      "ApplicationData": {
+        "InputValReasonCodes": {
+          "Reason": {
+            "Applicant": "",
+            "Code": "Número de identificación",
+            "Type": "String",
+            "Description": "Campo &amp;apos;Número de identificación&amp;apos; supera el número máximo de caracteres permitido (de 1 a 8 ó 10. No debe iniciar con cero (0).)"
+          }
+        }
+      },
+      "VelocityCheckData": null,
+      "FechaExpedicion": null,
+      "LugarExpedicion": null,
+      "Apellido1": null,
+      "Apellido2": null,
+      "Nombre1": null,
+      "Nombre2": null
+    }
+  }

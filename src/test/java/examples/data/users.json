@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 2,
+    "email": "hola",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg"
+  },
+  "post": {
+    "name": "Juan",
+    "job": "eternal",
+    "id": "915",
+    "createdAt": "2024-02-14T02:21:50.688Z"
+  }
+}
